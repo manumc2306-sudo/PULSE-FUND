@@ -38,21 +38,19 @@ html, body, [class*="css"] {
     color: #F3F4F6;
 }
 
-/* TARJETAS (MÉTRICAS) CON FONDO GRIS OSCURO COHESIVO */
-[data-testid="metric-container"] {
-    background: rgba(30, 41, 59, 0.75) !important; /* Fondo gris/azul oscuro semi-transparente */
-    border: 1px solid rgba(255, 255, 255, 0.1) !important; /* Borde sutil para dar relieve */
-    border-radius: 14px !important; /* Bordes redondeados iguales a tus inputs */
-    padding: 1rem !important; /* Espaciado interno para que no se pegue el texto al borde */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; /* Sombra suave para separarlo del fondo */
+/* NUEVO CONTENEDOR DE MÉTRICAS CORREGIDO PARA STREAMLIT */
+[data-testid="stMetric"] {
+    background-color: rgba(30, 41, 59, 0.7) !important; /* Fondo gris azulado oscuro con opacidad */
+    border: 1px solid rgba(255, 255, 255, 0.12) !important; /* Borde sutil para separarlo del fondo */
+    border-radius: 12px !important; /* Bordes redondeados estéticos */
+    padding: 0.8rem 1.2rem !important; /* Espaciado interno para que respire el texto */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important; /* Sombra para dar volumen */
 }
 
-/* Fuerza el texto de las métricas a blanco brillante */
-[data-testid="metric-container"] *, 
-[data-testid="metric-container"] label, 
-[data-testid="metric-container"] div, 
-[data-testid="metric-container"] p, 
-[data-testid="metric-container"] span {
+/* Forzar que los títulos, números y etiquetas secundarias sean blancos y legibles */
+[data-testid="stMetric"] label,
+[data-testid="stMetric"] [data-testid="stMetricValue"] div,
+[data-testid="stMetric"] [data-testid="stMetricValue"] {
     color: #FFFFFF !important;
 }
 
