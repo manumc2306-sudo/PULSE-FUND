@@ -38,14 +38,16 @@ html, body, [class*="css"] {
     color: #F3F4F6;
 }
 
-/* CARDS / MÉTRICAS */
+/* CÓDIGO NUEVO */
 [data-testid="metric-container"] {
-    background: rgba(255,255,255,0.96) !important;
-    color: black !important;
-    border: 1px solid rgba(255,255,255,0.06);
-    backdrop-filter: blur(10px);
-    border-radius: 18px;
-    padding: 1rem;
+    background: transparent !important; /* Elimina el recuadro blanco de fondo */
+    border: none !important;            /* Quita el borde gris */
+    box-shadow: none !important;        /* Quita la sombra del contenedor */
+    backdrop-filter: none !important;   /* Desactiva el efecto de desenfoque */
+}
+
+[data-testid="metric-container"] * {
+    color: #FFFFFF !important;          /* Fuerza a que todos los textos sean blancos */
 }
 
 /* TABS */
