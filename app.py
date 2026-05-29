@@ -23,16 +23,6 @@ st.markdown("""
         linear-gradient(135deg, #0f172a 0%, #111827 45%, #1e1b4b 100%);
 }
 
-/* SIDEBAR */
-section[data-testid="stSidebar"] {
-    background: linear-gradient(
-        180deg,
-        rgba(15,23,42,0.96) 0%,
-        rgba(30,27,75,0.96) 100%
-    );
-    border-right: 1px solid rgba(255,255,255,0.06);
-}
-
 /* TEXTO GENERAL */
 html, body, [class*="css"] {
     color: #F3F4F6;
