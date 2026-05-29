@@ -166,6 +166,7 @@ st.markdown("""
             margin: 0;
             letter-spacing: -1px;
         ">Pulse Fund</h1>
+        
     </div>
 <p style="font-size:1.1rem; margin:0; font-weight:400;">
     <span style="color:#111827 !important;">
@@ -176,6 +177,7 @@ st.markdown("""
         Cuando hay tormenta, esperamos.
     </span>
 </p>
+
 <div style="margin-top:1rem; color:#111827;">
         <span class="pulse-tag"> Momentum</span>
         <span class="pulse-tag"> Filtro Volatilidad</span>
