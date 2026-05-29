@@ -94,7 +94,7 @@ st.markdown("""
     box-shadow: 0 0 12px rgba(123,97,255,0.08);
 }
 /* TEXTO BLANCO GENERAL */
-html, body, p, span, label, div {
+p, label, .stMarkdown, h1, h2, h3 {
     color: white !important;
 }
 
@@ -108,9 +108,19 @@ input, textarea {
     color: white !important;
 }
 
-/* SELECTBOX */
-div[data-baseweb="select"] * {
-    color: white !important;
+/* SELECTBOX TEXTO */
+div[data-baseweb="select"] span {
+    color: black !important;
+}
+
+/* INPUT FECHAS Y NUMBER INPUT */
+input {
+    color: black !important;
+}
+
+/* MULTISELECT TEXTO */
+.stMultiSelect div {
+    color: black !important;
 }
 
 /* RADIO BUTTONS */
