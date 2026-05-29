@@ -57,7 +57,7 @@ html, body, [class*="css"] {
 
 /* REDUCIR EL TAMAÑO DEL NÚMERO PARA QUE NO SE CORTE */
 [data-testid="stMetricValue"] > div {
-    font-size: 1.35rem !important; 
+    font-size: 2.00rem !important; 
     white-space: nowrap !important; 
 }
 
@@ -207,7 +207,7 @@ Pulse Fund
     margin-bottom:1rem;
     font-weight:400;
 ">
-Invertimos when el mercado tiene pulso fuerte.
+Invertimos cuando el mercado tiene pulso fuerte.
 <span style="color:#db2777; font-weight:600;">
 Cuando hay tormenta, esperamos.
 </span>
