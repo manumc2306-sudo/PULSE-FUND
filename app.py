@@ -57,8 +57,8 @@ button[data-baseweb="tab"][aria-selected="true"] {
     color: #FF2E93 !important;
 }
 
-/* HEADERS GENERALES */
-h2, h3 {
+/* HEADERS */
+h1, h2, h3 {
     color: white !important;
 }
 
