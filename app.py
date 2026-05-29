@@ -172,7 +172,7 @@ st.markdown("""
     Invertimos cuando el mercado tiene pulso fuerte.
     <span style="color:#db2777; font-weight:600;">
         Cuando hay tormenta, esperamos.
-    </span>
+    </div>
 </p>
 
 <div style="margin-top:1rem; color:#111827;">
