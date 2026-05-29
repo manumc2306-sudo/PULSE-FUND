@@ -133,6 +133,10 @@ input, textarea {
     color: white !important;
 }
 
+/* VALORES DE LAS TARJETAS */
+[data-testid="metric-container"] * {
+    color: white !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
