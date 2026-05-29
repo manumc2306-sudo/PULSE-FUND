@@ -178,9 +178,6 @@ input, textarea {
 </style>
 """, unsafe_allow_html=True)
 
-</style>
-""", unsafe_allow_html=True)
-
 # ── HEADER ──────────────────────────────────────────────────
 st.markdown("""
 <div style="
@@ -210,7 +207,7 @@ Pulse Fund
     margin-bottom:1rem;
     font-weight:400;
 ">
-Invertimos cuando el mercado tiene pulso fuerte.
+Invertimos when el mercado tiene pulso fuerte.
 <span style="color:#db2777; font-weight:600;">
 Cuando hay tormenta, esperamos.
 </span>
@@ -288,7 +285,7 @@ with st.sidebar:
                  style="width:150px; border-radius:16px;">
         </div>
         """, unsafe_allow_html=True)
-# ── SIDEBAR ──────────────────────────────────────────────────
+# ── SIDEBAR END ──────────────────────────────────────────────
 
 st.sidebar.header("⚙️ Parámetros")
 
