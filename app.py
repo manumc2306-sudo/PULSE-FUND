@@ -167,7 +167,7 @@ st.markdown("""
             letter-spacing: -1px;
         ">Pulse Fund</h1>
     </div>
-<p style="color:#111827; font-size:1.1rem; margin:0; font-weight:400;">
+<p style="color:#111827 !important; font-size:1.1rem; margin:0; font-weight:400;">
         Invertimos cuando el mercado tiene pulso fuerte.
         <span style="color:#db2777; font-weight:600;">Cuando hay tormenta, esperamos.</span>
     </p>
