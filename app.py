@@ -167,10 +167,15 @@ st.markdown("""
             letter-spacing: -1px;
         ">Pulse Fund</h1>
     </div>
-<p style="color:#111827 !important; font-size:1.1rem; margin:0; font-weight:400;">
+<p style="font-size:1.1rem; margin:0; font-weight:400;">
+    <span style="color:#111827 !important;">
         Invertimos cuando el mercado tiene pulso fuerte.
-        <span style="color:#db2777; font-weight:600;">Cuando hay tormenta, esperamos.</span>
-    </p>
+    </span>
+
+    <span style="color:#db2777 !important; font-weight:600;">
+        Cuando hay tormenta, esperamos.
+    </span>
+</p>
 <div style="margin-top:1rem; color:#111827;">
         <span class="pulse-tag"> Momentum</span>
         <span class="pulse-tag"> Filtro Volatilidad</span>
