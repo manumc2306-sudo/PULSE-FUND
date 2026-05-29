@@ -110,7 +110,7 @@ section[data-testid="stSidebar"] h3 {
 
 /* INPUTS */
 input, textarea {
-    color: white !important;
+    color: black !important;
 }
 
 /* MULTISELECT TEXTO */
