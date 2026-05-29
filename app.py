@@ -229,8 +229,7 @@ BTC · ETH · SOL
 </span>
 
 </div>
-</div>
-""", unsafe_allow_html=True)
+</div>  """, unsafe_allow_html=True)
 
 # ── SIDEBAR ──────────────────────────────────────────────────
 with st.sidebar:
