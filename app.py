@@ -40,13 +40,10 @@ html, body, [class*="css"] {
 
 /* CONTENEDOR DE MÉTRICAS CON EL COLOR FUCSIA DE LA BARRA LATERAL */
 [data-testid="stMetric"] {
-    /* Usamos el color fucsia base con un 25% de opacidad para el fondo */
     background-color: rgba(255, 46, 147, 0.25) !important; 
-    /* Un borde fucsia un poco más brillante pero sutil */
     border: 1px solid rgba(255, 46, 147, 0.4) !important; 
     border-radius: 12px !important;
     padding: 0.6rem 0.4rem !important; 
-    /* Sombra rosa neón muy suave para que combine con la estética */
     box-shadow: 0 4px 20px rgba(255, 46, 147, 0.15) !important;
     text-align: center !important; 
 }
@@ -60,11 +57,11 @@ html, body, [class*="css"] {
 
 /* REDUCIR EL TAMAÑO DEL NÚMERO PARA QUE NO SE CORTE */
 [data-testid="stMetricValue"] > div {
-    font-size: 2.00rem !important; 
+    font-size: 1.35rem !important; 
     white-space: nowrap !important; 
 }
 
-/* TABS */
+/* TABS (PESTAÑAS) */
 button[data-baseweb="tab"] {
     color: #D1D5DB !important;
     font-weight: 600;
@@ -72,6 +69,36 @@ button[data-baseweb="tab"] {
 
 button[data-baseweb="tab"][aria-selected="true"] {
     color: #FF2E93 !important;
+}
+
+/* CAMBIAR EL COLOR DE LAS LÍNEAS DECORATIVAS NATIVAS A FUCSIA NEÓN */
+hr, 
+.stTabs [data-baseweb="tab-highlight-id"] {
+    background-color: #FF2E93 !important;
+}
+
+/* ESTILIZAR EL BOTÓN "EJECUTAR SIMULACIÓN" A JUEGO CON PULSE FUND */
+div.stButton > button {
+    background-color: #FF2E93 !important; 
+    color: #FFFFFF !important; 
+    border: 1px solid rgba(255, 46, 147, 0.5) !important;
+    border-radius: 8px !important; 
+    font-weight: 600 !important;
+    padding: 0.6rem 1.5rem !important;
+    transition: all 0.3s ease !important; 
+    box-shadow: 0 4px 15px rgba(255, 46, 147, 0.2) !important;
+}
+
+/* EFECTO HOVER (CUANDO EL MOUSE PASA POR ENCIMA DEL BOTÓN) */
+div.stButton > button:hover {
+    background-color: #E01A7B !important; 
+    box-shadow: 0 6px 20px rgba(255, 46, 147, 0.4) !important; 
+    transform: translateY(-1px) !important; 
+}
+
+/* EFECTO CLICK (CUANDO PRESIONAS EL BOTÓN) */
+div.stButton > button:active {
+    transform: translateY(1px) !important;
 }
 
 /* MULTISELECT TAGS */
@@ -147,6 +174,9 @@ input, textarea {
 .stAlert div[data-testid="stMarkdownContainer"] strong {
     color: #FF2E93 !important;
 }
+
+</style>
+""", unsafe_allow_html=True)
 
 </style>
 """, unsafe_allow_html=True)
