@@ -138,6 +138,22 @@ input, textarea {
 [data-testid="metric-container"] * {
     color: black !important;
 }
+
+/* --- AÑADE ESTO JUSTO ANTES DE CERRAR EL SEGUNDO </style> --- */
+
+/* Forzar que las opciones del Radio Button (tanto activas como inactivas) tengan color blanco brillante */
+.stRadio div[role="radiogroup"] label p {
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+}
+
+/* Darle brillo y contraste al texto informativo azul de abajo */
+.stAlert div[data-testid="stMarkdownContainer"] p {
+    color: #F3F4F6 !important;
+}
+.stAlert div[data-testid="stMarkdownContainer"] strong {
+    color: #FF2E93 !important; /* Resalta las negritas en rosa neón */
+}
 </style>
 """, unsafe_allow_html=True)
 
