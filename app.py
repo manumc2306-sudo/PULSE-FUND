@@ -38,13 +38,13 @@ html, body, [class*="css"] {
     color: #F3F4F6;
 }
 
-/* TARJETAS (MÉTRICAS) TRANSPARENTES Y LETRA BLANCA */
+/* TARJETAS (MÉTRICAS) CON FONDO GRIS OSCURO COHESIVO */
 [data-testid="metric-container"] {
-    background: transparent !important; 
-    border: none !important;            
-    box-shadow: none !important;        
-    backdrop-filter: none !important;   
-    padding: 0.5rem 0px !important;
+    background: rgba(30, 41, 59, 0.75) !important; /* Fondo gris/azul oscuro semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important; /* Borde sutil para dar relieve */
+    border-radius: 14px !important; /* Bordes redondeados iguales a tus inputs */
+    padding: 1rem !important; /* Espaciado interno para que no se pegue el texto al borde */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; /* Sombra suave para separarlo del fondo */
 }
 
 /* Fuerza el texto de las métricas a blanco brillante */
