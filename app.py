@@ -155,8 +155,9 @@ st.markdown("""
     margin-bottom: 1.5rem;
     box-shadow: 0 8px 32px rgba(168,85,247,0.08);
 ">
+
     <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;">
-        <span style="font-size:3rem;"></span>
+        
         <h1 style="
             background: linear-gradient(90deg, #7c3aed, #ec4899);
             -webkit-background-clip: text;
@@ -165,22 +166,70 @@ st.markdown("""
             font-weight: 800;
             margin: 0;
             letter-spacing: -1px;
-        ">Pulse Fund</h1>
-        
-    </div>
-<p style="color:#111827; font-size:1.1rem; margin:0; font-weight:400;">
-    Invertimos cuando el mercado tiene pulso fuerte.
-    <span style="color:#db2777; font-weight:600;">
-        Cuando hay tormenta, esperamos.
-    </div>
-</p>
+        ">
+            Pulse Fund
+        </h1>
 
-<div style="margin-top:1rem; color:#111827;">
-        <span class="pulse-tag"> Momentum</span>
-        <span class="pulse-tag"> Filtro Volatilidad</span>
-        <span class="pulse-tag"> Rebalanceo Mensual</span>
-        <span class="pulse-tag"> BTC · ETH · SOL</span>
     </div>
+
+    <p style="color:#111827; font-size:1.1rem; margin:0; font-weight:400;">
+        Invertimos cuando el mercado tiene pulso fuerte.
+        <span style="color:#db2777; font-weight:600;">
+            Cuando hay tormenta, esperamos.
+        </span>
+    </p>
+
+    <div style="margin-top:1rem; color:#111827;">
+
+        <span style="
+            background:#ede9fe;
+            color:#6d28d9;
+            padding:0.35rem 0.8rem;
+            border-radius:999px;
+            margin-right:0.5rem;
+            font-size:0.85rem;
+            font-weight:600;
+        ">
+            Momentum
+        </span>
+
+        <span style="
+            background:#fce7f3;
+            color:#be185d;
+            padding:0.35rem 0.8rem;
+            border-radius:999px;
+            margin-right:0.5rem;
+            font-size:0.85rem;
+            font-weight:600;
+        ">
+            Filtro Volatilidad
+        </span>
+
+        <span style="
+            background:#ede9fe;
+            color:#6d28d9;
+            padding:0.35rem 0.8rem;
+            border-radius:999px;
+            margin-right:0.5rem;
+            font-size:0.85rem;
+            font-weight:600;
+        ">
+            Rebalanceo Mensual
+        </span>
+
+        <span style="
+            background:#fce7f3;
+            color:#be185d;
+            padding:0.35rem 0.8rem;
+            border-radius:999px;
+            font-size:0.85rem;
+            font-weight:600;
+        ">
+            BTC · ETH · SOL
+        </span>
+
+    </div>
+
 </div>
 """, unsafe_allow_html=True)
 
