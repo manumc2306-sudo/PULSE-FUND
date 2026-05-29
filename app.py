@@ -105,7 +105,7 @@ section[data-testid="stSidebar"] p,
 section[data-testid="stSidebar"] h1,
 section[data-testid="stSidebar"] h2,
 section[data-testid="stSidebar"] h3 {
-    color: black !important;
+    color: white !important;
 }
 
 /* INPUTS */
