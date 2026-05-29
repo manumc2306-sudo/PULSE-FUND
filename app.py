@@ -58,7 +58,7 @@ html, body, [class*="css"] {
 
 /* REDUCIR EL TAMAÑO DEL NÚMERO PARA QUE NO SE CORTE CON PUNTOS SUSPENSIVOS */
 [data-testid="stMetricValue"] > div {
-    font-size: 1.35rem !important; /* Baja ligeramente el tamaño para que quepan cifras de más de 5 dígitos */
+    font-size: 1.40rem !important; /* Baja ligeramente el tamaño para que quepan cifras de más de 5 dígitos */
     white-space: nowrap !important; /* Evita que el número intente saltar de línea */
 }
 
