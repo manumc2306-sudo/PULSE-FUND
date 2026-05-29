@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 from datetime import date, timedelta
 import base64
 
-# ── CSS / ESTILO GENERAL ───────────────────────────────────
+# ── CSS / ESTILO GENERAL UNIFICADO Y CORREGIDO ───────────────────────────────────
 st.markdown("""
 <style>
 
@@ -38,16 +38,22 @@ html, body, [class*="css"] {
     color: #F3F4F6;
 }
 
-/* CÓDIGO NUEVO */
+/* TARJETAS (MÉTRICAS) TRANSPARENTES Y LETRA BLANCA */
 [data-testid="metric-container"] {
-    background: transparent !important; /* Elimina el recuadro blanco de fondo */
-    border: none !important;            /* Quita el borde gris */
-    box-shadow: none !important;        /* Quita la sombra del contenedor */
-    backdrop-filter: none !important;   /* Desactiva el efecto de desenfoque */
+    background: transparent !important; 
+    border: none !important;            
+    box-shadow: none !important;        
+    backdrop-filter: none !important;   
+    padding: 0.5rem 0px !important;
 }
 
-[data-testid="metric-container"] * {
-    color: #FFFFFF !important;          /* Fuerza a que todos los textos sean blancos */
+/* Fuerza el texto de las métricas a blanco brillante */
+[data-testid="metric-container"] *, 
+[data-testid="metric-container"] label, 
+[data-testid="metric-container"] div, 
+[data-testid="metric-container"] p, 
+[data-testid="metric-container"] span {
+    color: #FFFFFF !important;
 }
 
 /* TABS */
@@ -60,17 +66,6 @@ button[data-baseweb="tab"][aria-selected="true"] {
     color: #FF2E93 !important;
 }
 
-/* HEADERS */
-h1, h2, h3 {
-    color: white !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<style>
-
 /* MULTISELECT TAGS */
 .stMultiSelect [data-baseweb="tag"] {
     background: linear-gradient(90deg, #7B61FF, #FF2E93) !important;
@@ -80,29 +75,26 @@ st.markdown("""
     font-weight: 600 !important;
 }
 
-/* TEXTO DENTRO DEL TAG */
 .stMultiSelect [data-baseweb="tag"] span {
     color: white !important;
 }
 
-/* X DE CERRAR */
 .stMultiSelect [data-baseweb="tag"] svg {
     fill: white !important;
 }
 
-/* BORDE DEL SELECTOR */
 .stMultiSelect div[data-baseweb="select"] > div {
     border: 1px solid rgba(123,97,255,0.35) !important;
     border-radius: 14px !important;
     box-shadow: 0 0 12px rgba(123,97,255,0.08);
 }
 
-/* TEXTO BLANCO GENERAL */
-label, .stMarkdown, h1, h2, h3 {
+/* HEADERS Y TEXTOS */
+h1, h2, h3, label, .stMarkdown {
     color: white !important;
 }
 
-/* TEXTO NORMAL SIDEBAR */
+/* TEXTO SIDEBAR */
 section[data-testid="stSidebar"] label,
 section[data-testid="stSidebar"] .stMarkdown,
 section[data-testid="stSidebar"] p,
@@ -117,12 +109,11 @@ input, textarea {
     color: black !important;
 }
 
-/* MULTISELECT TEXTO */
 .stMultiSelect div {
     color: black !important;
 }
 
-/* RADIO BUTTONS (Corrección de visibilidad de las opciones) */
+/* RADIO BUTTONS */
 .stRadio div[role="radiogroup"] label {
     color: white !important;
 }
@@ -139,11 +130,6 @@ input, textarea {
 /* CAPTIONS */
 .stCaption {
     color: white !important;
-}
-
-/* VALORES DE LAS TARJETAS */
-[data-testid="metric-container"] * {
-    color: black !important;
 }
 
 /* TARJETA INFORMATIVA INFERIOR (st.info) */
