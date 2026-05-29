@@ -133,20 +133,6 @@ input, textarea {
     color: white !important;
 }
 
-/* TEXTO NEGRO EN INPUTS DEL SIDEBAR */
-section[data-testid="stSidebar"] input,
-section[data-testid="stSidebar"] textarea,
-section[data-testid="stSidebar"] div[data-baseweb="select"] span,
-section[data-testid="stSidebar"] .stMultiSelect div {
-    color: black !important;
-}
-
-/* FONDO BLANCO + TEXTO NEGRO */
-section[data-testid="stSidebar"] input {
-    background-color: white !important;
-    color: black !important;
-}
-
 </style>
 """, unsafe_allow_html=True)
 
