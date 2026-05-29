@@ -40,7 +40,7 @@ html, body, [class*="css"] {
 
 /* CARDS / MÉTRICAS */
 [data-testid="metric-container"] {
-    background: rgba(255,255,255,0.04);
+    background: white;
     border: 1px solid rgba(255,255,255,0.06);
     backdrop-filter: blur(10px);
     border-radius: 18px;
