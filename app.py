@@ -94,6 +94,7 @@ st.markdown("""
     border-radius: 14px !important;
     box-shadow: 0 0 12px rgba(123,97,255,0.08);
 }
+
 /* TEXTO BLANCO GENERAL */
 label, .stMarkdown, h1, h2, h3 {
     color: white !important;
@@ -119,9 +120,13 @@ input, textarea {
     color: black !important;
 }
 
-/* RADIO BUTTONS */
-.stRadio label {
+/* RADIO BUTTONS (Corrección de visibilidad de las opciones) */
+.stRadio div[role="radiogroup"] label {
     color: white !important;
+}
+.stRadio div[role="radiogroup"] label p {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
 }
 
 /* SLIDERS */
@@ -139,21 +144,14 @@ input, textarea {
     color: black !important;
 }
 
-/* --- AÑADE ESTO JUSTO ANTES DE CERRAR EL SEGUNDO </style> --- */
-
-/* Forzar que las opciones del Radio Button (tanto activas como inactivas) tengan color blanco brillante */
-.stRadio div[role="radiogroup"] label p {
-    color: #FFFFFF !important;
-    font-weight: 500 !important;
-}
-
-/* Darle brillo y contraste al texto informativo azul de abajo */
+/* TARJETA INFORMATIVA INFERIOR (st.info) */
 .stAlert div[data-testid="stMarkdownContainer"] p {
     color: #F3F4F6 !important;
 }
 .stAlert div[data-testid="stMarkdownContainer"] strong {
-    color: #FF2E93 !important; /* Resalta las negritas en rosa neón */
+    color: #FF2E93 !important;
 }
+
 </style>
 """, unsafe_allow_html=True)
 
