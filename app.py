@@ -94,7 +94,7 @@ st.markdown("""
     box-shadow: 0 0 12px rgba(123,97,255,0.08);
 }
 /* TEXTO BLANCO GENERAL */
-p, label, .stMarkdown, h1, h2, h3 {
+label, .stMarkdown, h1, h2, h3 {
     color: white !important;
 }
 
@@ -160,7 +160,7 @@ Pulse Fund
 </h1>
 
 <p style="
-    color:#000000;
+    color:black;
     font-size:1.1rem;
     margin-bottom:1rem;
     font-weight:400;
