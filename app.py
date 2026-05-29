@@ -94,7 +94,7 @@ st.markdown("""
     box-shadow: 0 0 12px rgba(123,97,255,0.08);
 }
 /* TEXTO BLANCO GENERAL */
-p, label, .stMarkdown, h2, h3 {
+p, label, .stMarkdown, h1, h2, h3 {
     color: white !important;
 }
 
