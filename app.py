@@ -40,7 +40,8 @@ html, body, [class*="css"] {
 
 /* CARDS / MÉTRICAS */
 [data-testid="metric-container"] {
-    background: white;
+    background: rgba(255,255,255,0.96) !important;
+    color: black !important;
     border: 1px solid rgba(255,255,255,0.06);
     backdrop-filter: blur(10px);
     border-radius: 18px;
@@ -135,7 +136,7 @@ input, textarea {
 
 /* VALORES DE LAS TARJETAS */
 [data-testid="metric-container"] * {
-    color: white !important;
+    color: black !important;
 }
 </style>
 """, unsafe_allow_html=True)
