@@ -47,18 +47,6 @@ button[data-baseweb="tab"][aria-selected="true"] {
     color: #FF2E93 !important;
 }
 
-/* HEADERS */
-h1, h2, h3 {
-    color: white !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-
-st.markdown("""
-<style>
-
 /* =========================
    COLOR PRINCIPAL APP
 ========================= */
