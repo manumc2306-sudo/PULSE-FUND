@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 from datetime import date, timedelta
 import base64
 
-# ── CSS / ESTILO GENERAL UNIFICADO Y CORREGIDO ───────────────────────────────────
+# ── CSS / ESTILO GENERAL ───────────────────────────────────
 st.markdown("""
 <style>
 
@@ -38,20 +38,13 @@ html, body, [class*="css"] {
     color: #F3F4F6;
 }
 
-/* NUEVO CONTENEDOR DE MÉTRICAS CORREGIDO PARA STREAMLIT */
-[data-testid="stMetric"] {
-    background-color: rgba(30, 41, 59, 0.7) !important; /* Fondo gris azulado oscuro con opacidad */
-    border: 1px solid rgba(255, 255, 255, 0.12) !important; /* Borde sutil para separarlo del fondo */
-    border-radius: 12px !important; /* Bordes redondeados estéticos */
-    padding: 0.8rem 1.2rem !important; /* Espaciado interno para que respire el texto */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important; /* Sombra para dar volumen */
-}
-
-/* Forzar que los títulos, números y etiquetas secundarias sean blancos y legibles */
-[data-testid="stMetric"] label,
-[data-testid="stMetric"] [data-testid="stMetricValue"] div,
-[data-testid="stMetric"] [data-testid="stMetricValue"] {
-    color: #FFFFFF !important;
+/* CARDS / MÉTRICAS */
+[data-testid="metric-container"] {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding: 1rem;
 }
 
 /* TABS */
@@ -64,6 +57,17 @@ button[data-baseweb="tab"][aria-selected="true"] {
     color: #FF2E93 !important;
 }
 
+/* HEADERS */
+h1, h2, h3 {
+    color: white !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
 /* MULTISELECT TAGS */
 .stMultiSelect [data-baseweb="tag"] {
     background: linear-gradient(90deg, #7B61FF, #FF2E93) !important;
@@ -73,26 +77,28 @@ button[data-baseweb="tab"][aria-selected="true"] {
     font-weight: 600 !important;
 }
 
+/* TEXTO DENTRO DEL TAG */
 .stMultiSelect [data-baseweb="tag"] span {
     color: white !important;
 }
 
+/* X DE CERRAR */
 .stMultiSelect [data-baseweb="tag"] svg {
     fill: white !important;
 }
 
+/* BORDE DEL SELECTOR */
 .stMultiSelect div[data-baseweb="select"] > div {
     border: 1px solid rgba(123,97,255,0.35) !important;
     border-radius: 14px !important;
     box-shadow: 0 0 12px rgba(123,97,255,0.08);
 }
-
-/* HEADERS Y TEXTOS */
-h1, h2, h3, label, .stMarkdown {
+/* TEXTO BLANCO GENERAL */
+label, .stMarkdown, h1, h2, h3 {
     color: white !important;
 }
 
-/* TEXTO SIDEBAR */
+/* TEXTO NORMAL SIDEBAR */
 section[data-testid="stSidebar"] label,
 section[data-testid="stSidebar"] .stMarkdown,
 section[data-testid="stSidebar"] p,
@@ -107,17 +113,14 @@ input, textarea {
     color: black !important;
 }
 
+/* MULTISELECT TEXTO */
 .stMultiSelect div {
     color: black !important;
 }
 
 /* RADIO BUTTONS */
-.stRadio div[role="radiogroup"] label {
+.stRadio label {
     color: white !important;
-}
-.stRadio div[role="radiogroup"] label p {
-    color: #FFFFFF !important;
-    font-weight: 600 !important;
 }
 
 /* SLIDERS */
@@ -130,14 +133,10 @@ input, textarea {
     color: white !important;
 }
 
-/* TARJETA INFORMATIVA INFERIOR (st.info) */
-.stAlert div[data-testid="stMarkdownContainer"] p {
-    color: #F3F4F6 !important;
+/* VALORES DE LAS TARJETAS */
+[data-testid="metric-container"] * {
+    color: white !important;
 }
-.stAlert div[data-testid="stMarkdownContainer"] strong {
-    color: #FF2E93 !important;
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -227,7 +226,8 @@ BTC · ETH · SOL
 </span>
 
 </div>
-</div>  """, unsafe_allow_html=True)
+</div>
+""", unsafe_allow_html=True)
 
 # ── SIDEBAR ──────────────────────────────────────────────────
 with st.sidebar:
