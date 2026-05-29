@@ -11,6 +11,8 @@ import plotly.graph_objects as go
 from datetime import date, timedelta
 import base64
 
+st.markdown("""
+<style>
 /* =========================
    COLOR PRINCIPAL APP
 ========================= */
