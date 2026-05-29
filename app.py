@@ -160,7 +160,7 @@ Pulse Fund
 </h1>
 
 <p style="
-    color:black;
+    color:#000000;
     font-size:1.1rem;
     margin-bottom:1rem;
     font-weight:400;
