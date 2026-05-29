@@ -38,20 +38,28 @@ html, body, [class*="css"] {
     color: #F3F4F6;
 }
 
-/* NUEVO CONTENEDOR DE MÉTRICAS CORREGIDO PARA STREAMLIT */
+/* CONTENEDOR DE MÉTRICAS OPTIMIZADO PARA PANTALLAS CON MUCHAS COLUMNAS */
 [data-testid="stMetric"] {
-    background-color: rgba(30, 41, 59, 0.7) !important; /* Fondo gris azulado oscuro con opacidad */
-    border: 1px solid rgba(255, 255, 255, 0.12) !important; /* Borde sutil para separarlo del fondo */
-    border-radius: 12px !important; /* Bordes redondeados estéticos */
-    padding: 0.8rem 1.2rem !important; /* Espaciado interno para que respire el texto */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important; /* Sombra para dar volumen */
+    background-color: rgba(30, 41, 59, 0.75) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 12px !important;
+    /* Reducimos el padding lateral a 0.4rem para ganar espacio horizontal interno */
+    padding: 0.6rem 0.4rem !important; 
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+    text-align: center !important; /* Centra el contenido para que se vea ordenado */
 }
 
-/* Forzar que los títulos, números y etiquetas secundarias sean blancos y legibles */
+/* Forzar color blanco en todos los textos de la métrica */
 [data-testid="stMetric"] label,
 [data-testid="stMetric"] [data-testid="stMetricValue"] div,
 [data-testid="stMetric"] [data-testid="stMetricValue"] {
     color: #FFFFFF !important;
+}
+
+/* REDUCIR EL TAMAÑO DEL NÚMERO PARA QUE NO SE CORTE CON PUNTOS SUSPENSIVOS */
+[data-testid="stMetricValue"] > div {
+    font-size: 1.35rem !important; /* Baja ligeramente el tamaño para que quepan cifras de más de 5 dígitos */
+    white-space: nowrap !important; /* Evita que el número intente saltar de línea */
 }
 
 /* TABS */
